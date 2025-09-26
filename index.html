@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do-App</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>To-Do-App</h1>
+    <div class="task-input">
+      <input type="text" id="taskInput" placeholder="Enter your task...">
+      <input type="date" id="dueDateInput">
+      <input type="time" id="dueTimeInput">
+      <input type="number" id="reminderMinsInput" placeholder="Remind (mins)" min="0">
+      <select id="prioritySelect">
+        <option value="low">Low Priority</option>
+        <option value="medium">Medium</option>
+        <option value="high">High Priority</option>
+      </select>
+      <button id="addBtn">Add Task</button>
+    </div>
+
+    <select id="filterSelect">
+      <option value="all">All Tasks</option>
+      <option value="completed">Completed</option>
+      <option value="uncompleted">Uncompleted</option>
+      <option value="low">Low Priority</option>
+      <option value="medium">Medium Priority</option>
+      <option value="high">High Priority</option>
+    </select>
+    <p id="taskCounter">0 tasks remaining</p>
+    
+    <div class="task-list-container">
+      <ul id="taskList">
+      </ul>
+    </div>
+    <h3>Trash</h3>
+    <ul id="trashList"></ul>
+    <button id="clearTrashBtn">🧹 Clear Trash</button>
+  </div>
+
+<script src="./script.js"></script>
+</body>
+</html>
