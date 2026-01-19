@@ -89,5 +89,4 @@ Drag-and-drop task reordering
 
 Rakesh
 Full-Stack Developer
-## 📂 Project Structure
 
